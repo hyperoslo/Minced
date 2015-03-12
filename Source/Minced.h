@@ -1,6 +1,6 @@
 @import Foundation;
 
-@interface HYPJSONPreprocessor : NSObject
+@interface Minced : NSObject
 
 + (id)toCamelCaseJSON:(id)JSON;
 
