@@ -1,11 +1,11 @@
 @import Foundation;
 
-@interface Minced : NSObject
+@interface NSObject (Minced)
 
-+ (id)toCamelCaseJSON:(id)JSON;
+- (id)minced_JSONKeysToCamelCase;
 
-+ (NSArray *)toCamelCaseJSONObjects:(NSArray *)JSONObjects;
+- (NSArray *)minced_JSONObjectsKeysToCamelCase;
 
-+ (NSDictionary *)toCamelCaseJSONObject:(NSDictionary *)JSONObject;
+- (NSDictionary *)minced_JSONObjectKeysToCamelCase;
 
 @end

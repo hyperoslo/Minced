@@ -30,7 +30,7 @@
                                                        options:kNilOptions
                                                          error:&error2];
 
-    XCTAssertEqualObjects([Minced toCamelCaseJSON:snakeCaseJSON], camelCaseJSON);
+    XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeysToCamelCase], camelCaseJSON);
 }
 
 @end
