@@ -9,7 +9,16 @@
 
 ## Usage
 
-`<API>`
+```objc
+// Converts all the keys in the JSON to camelCase
+- (id)minced_JSONKeysToCamelCase;
+
+// Converts all the keys in the NSArray to camelCase
+- (NSArray *)minced_JSONObjectsKeysToCamelCase;
+
+// Converts all the keys in the NSDictionary to camelCase
+- (NSDictionary *)minced_JSONObjectKeysToCamelCase;
+```
 
 ## Installation
 
