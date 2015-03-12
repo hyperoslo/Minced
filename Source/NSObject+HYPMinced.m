@@ -2,7 +2,7 @@
 
 #import "NSString+HYPNetworking.h"
 
-@implementation NSObject (Minced)
+@implementation NSObject (HYPMinced)
 
 - (id)minced_JSONKeysToCamelCase
 {

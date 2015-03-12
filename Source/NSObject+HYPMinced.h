@@ -1,6 +1,6 @@
 @import Foundation;
 
-@interface NSObject (Minced)
+@interface NSObject (HYPMinced)
 
 - (id)minced_JSONKeysToCamelCase;
 
