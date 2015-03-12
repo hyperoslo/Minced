@@ -1,6 +1,6 @@
 @import XCTest;
 
-#import "Minced.h"
+#import "NSObject+HYPMinced.h"
 
 @interface Tests : XCTestCase
 

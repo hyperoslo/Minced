@@ -1,4 +1,5 @@
-#import "Minced.h"
+#import "NSObject+HYPMinced.h"
+
 #import "NSString+HYPNetworking.h"
 
 @implementation NSObject (Minced)
