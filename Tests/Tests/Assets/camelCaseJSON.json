@@ -1,0 +1,53 @@
+{
+    "webWidgets": [
+        {
+            "createdAt": "2015-03-10",
+            "updatedAt": "2015-03-11",
+            "window": {
+                "title": "Hyper 1:1",
+                "name": "hyper_window",
+                "width": 666,
+                "height": 666
+            },
+            "contentImages": [
+                {
+                    "src": "http://lorempixel.com/g/400/200/",
+                    "alignment": "center",
+                    "createdAt": "2013-01-01"
+                },
+                {
+                    "src": "http://lorempixel.com/g/300/200/",
+                    "alignment": "left",
+                    "createdAt": "2014-01-01"
+                }
+            ],
+            "buttonText": {
+                "data": "Click Here",
+                "size": 1337,
+                "fontStyle": "bold",
+                "name": "Hyper_hyper",
+                "textAlignment": "center"
+            }
+        },
+        {
+            "createdAt": "2015-03-11",
+            "updatedAt": "2015-03-12",
+            "panel": {
+                "title": "Hyper 1:1",
+                "name": "hyper_panel",
+                "width": 777,
+                "height": 777
+            },
+            "contentVideos": [
+                {
+                    "src": "http://lorempixel.com/g/400/200/",
+                    "createdAt": "2013-02-01"
+                },
+                {
+                    "src": "http://lorempixel.com/g/300/200/",
+                    "createdAt": "2014-02-01"
+                }
+            ]
+        }
+    ]
+}
