@@ -12,9 +12,9 @@
 		14C4183D1A019A1500636FD6 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 14C418391A019A1500636FD6 /* LICENSE.md */; };
 		14C4183E1A019A1500636FD6 /* Minced.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 14C4183A1A019A1500636FD6 /* Minced.podspec */; };
 		309B693733CAEEDD6C239FCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8104DAD52B03677B048B74B /* libPods.a */; };
+		443627B81AB1BBA4007D0323 /* NSObject+HYPMinced.m in Sources */ = {isa = PBXBuildFile; fileRef = 443627B71AB1BBA4007D0323 /* NSObject+HYPMinced.m */; };
 		444C53C01AB1B2D900E6417F /* camelCaseJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 444C53BE1AB1B2D900E6417F /* camelCaseJSON.json */; };
 		444C53C11AB1B2D900E6417F /* snakeCaseJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 444C53BF1AB1B2D900E6417F /* snakeCaseJSON.json */; };
-		44B9FF8E1AB1B1BA001507CD /* Minced.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B9FF8D1AB1B1BA001507CD /* Minced.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		14C418391A019A1500636FD6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		14C4183A1A019A1500636FD6 /* Minced.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Minced.podspec; path = ../Minced.podspec; sourceTree = "<group>"; };
 		14C4183B1A019A1500636FD6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		443627B61AB1BBA4007D0323 /* NSObject+HYPMinced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYPMinced.h"; sourceTree = "<group>"; };
+		443627B71AB1BBA4007D0323 /* NSObject+HYPMinced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HYPMinced.m"; sourceTree = "<group>"; };
 		444C53BE1AB1B2D900E6417F /* camelCaseJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = camelCaseJSON.json; sourceTree = "<group>"; };
 		444C53BF1AB1B2D900E6417F /* snakeCaseJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snakeCaseJSON.json; sourceTree = "<group>"; };
-		44B9FF8C1AB1B1BA001507CD /* Minced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minced.h; sourceTree = "<group>"; };
-		44B9FF8D1AB1B1BA001507CD /* Minced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minced.m; sourceTree = "<group>"; };
 		4803140AC3FD011B0E095358 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		863A2D8EFADE5A42220A6DD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B8104DAD52B03677B048B74B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +88,8 @@
 		14C418371A01974300636FD6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				44B9FF8C1AB1B1BA001507CD /* Minced.h */,
-				44B9FF8D1AB1B1BA001507CD /* Minced.m */,
+				443627B61AB1BBA4007D0323 /* NSObject+HYPMinced.h */,
+				443627B71AB1BBA4007D0323 /* NSObject+HYPMinced.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -241,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C4182E1A01919C00636FD6 /* Tests.m in Sources */,
-				44B9FF8E1AB1B1BA001507CD /* Minced.m in Sources */,
+				443627B81AB1BBA4007D0323 /* NSObject+HYPMinced.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
