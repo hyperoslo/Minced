@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Minced.svg?style=flat)](http://cocoadocs.org/docsets/Minced)
 [![Platform](https://img.shields.io/cocoapods/p/Minced.svg?style=flat)](http://cocoadocs.org/docsets/Minced)
 
+> Mincing is a food preparation technique in which food ingredients are finely divided into uniform pieces.
+
 ## Usage
 
 `<API>`
