@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Minced"
-  s.version          = "0.1"
+  s.version          = "0.2"
   s.summary          = "ObjectiveC-fy your JSON keys. Enables camelCase named model attributes when performing direct JSON to object mapping."
   s.homepage         = "https://github.com/hyperoslo/Minced"
   s.license          = 'MIT'
