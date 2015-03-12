@@ -2,9 +2,18 @@ PODS:
   - NSString-HYPNetworking (0.1)
 
 DEPENDENCIES:
-  - NSString-HYPNetworking
+  - NSString-HYPNetworking (from `https://github.com/hyperoslo/NSString-HYPNetworking.git`)
+
+EXTERNAL SOURCES:
+  NSString-HYPNetworking:
+    :git: https://github.com/hyperoslo/NSString-HYPNetworking.git
+
+CHECKOUT OPTIONS:
+  NSString-HYPNetworking:
+    :commit: f6739852749be6ac707b48cb123b45e75efd63c4
+    :git: https://github.com/hyperoslo/NSString-HYPNetworking.git
 
 SPEC CHECKSUMS:
-  NSString-HYPNetworking: 941953383edbba2abd72014e4bfdd55fa4af8dff
+  NSString-HYPNetworking: f8ce810775b9d20b3aa3e304af04cf53f5af669f
 
 COCOAPODS: 0.36.0
