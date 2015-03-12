@@ -1,6 +1,6 @@
 @import XCTest;
 
-#import "HYPJSONPreprocessor.h"
+#import "Minced.h"
 
 @interface Tests : XCTestCase
 
@@ -30,7 +30,7 @@
                                                        options:kNilOptions
                                                          error:&error2];
 
-    XCTAssertEqualObjects([HYPJSONPreprocessor toCamelCaseJSON:snakeCaseJSON], camelCaseJSON);
+    XCTAssertEqualObjects([Minced toCamelCaseJSON:snakeCaseJSON], camelCaseJSON);
 }
 
 @end

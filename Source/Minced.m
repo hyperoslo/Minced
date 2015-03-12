@@ -1,7 +1,7 @@
-#import "HYPJSONPreprocessor.h"
+#import "Minced.h"
 #import "NSString+HYPNetworking.h"
 
-@implementation HYPJSONPreprocessor
+@implementation Minced
 
 + (id)toCamelCaseJSON:(id)JSON
 {
