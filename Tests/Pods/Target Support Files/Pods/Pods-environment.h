@@ -9,6 +9,6 @@
 // NSString-HYPNetworking
 #define COCOAPODS_POD_AVAILABLE_NSString_HYPNetworking
 #define COCOAPODS_VERSION_MAJOR_NSString_HYPNetworking 0
-#define COCOAPODS_VERSION_MINOR_NSString_HYPNetworking 1
+#define COCOAPODS_VERSION_MINOR_NSString_HYPNetworking 2
 #define COCOAPODS_VERSION_PATCH_NSString_HYPNetworking 0
 

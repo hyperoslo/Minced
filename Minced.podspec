@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/**/*'
 
-  s.dependency 'NSString-HYPNetworking', '~> 0.1'
+  s.dependency 'NSString-HYPNetworking', '~> 0.2'
 end
