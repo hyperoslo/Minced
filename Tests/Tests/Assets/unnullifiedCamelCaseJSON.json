@@ -1,0 +1,53 @@
+{
+    "webWidgets": [
+        {
+            "createdAt": "",
+            "updatedAt": "2015-03-11",
+            "window": {
+                "title": "",
+                "name": "hyper_window",
+                "width": 666,
+                "height": 666
+            },
+            "contentImages": [
+                {
+                    "src": "",
+                    "alignment": "center",
+                    "createdAt": "2013-01-01"
+                },
+                {
+                    "src": "http://lorempixel.com/g/300/200/",
+                    "alignment": "left",
+                    "createdAt": "2014-01-01"
+                }
+            ],
+            "buttonText": {
+                "data": "",
+                "size": 1337,
+                "fontStyle": "bold",
+                "name": "Hyper_hyper",
+                "textAlignment": "center"
+            }
+        },
+        {
+            "createdAt": "",
+            "updatedAt": "2015-03-12",
+            "panel": {
+                "title": "",
+                "name": "hyper_panel",
+                "width": 777,
+                "height": 777
+            },
+            "contentVideos": [
+                {
+                    "src": "",
+                    "createdAt": "2013-02-01"
+                },
+                {
+                    "src": "http://lorempixel.com/g/300/200/",
+                    "createdAt": "2014-02-01"
+                }
+            ]
+        }
+    ]
+}
