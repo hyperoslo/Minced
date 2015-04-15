@@ -79,6 +79,16 @@ NSArray *mincedJSON = [JSON minced_JSONObjectsKeysWithNonnulls];
 ]
 ```
 
+#### Realm
+
+This is how you would use it with Realm.
+
+```objc
+RLMRealm *realm = [RLMRealm defaultRealm];
+[realm beginWriteTransaction];
+[self createOrUpdateInDefaultRealmWithObject:mincedJSON];
+[realm commitWriteTransaction];
+```
 
 ## Installation
 
