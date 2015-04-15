@@ -54,6 +54,12 @@ This is especially useful as a workaround for avoiding crashes due to null value
 
 ```objc
 NSArray *mincedJSON = [JSON minced_JSONObjectsKeysWithNonnulls];
+
+// Realm
+RLMRealm *realm = [RLMRealm defaultRealm];
+[realm beginWriteTransaction];
+[self createOrUpdateInDefaultRealmWithObject:mincedJSON];
+[realm commitWriteTransaction];
 ```
 
 #### Minced JSON
@@ -77,17 +83,6 @@ NSArray *mincedJSON = [JSON minced_JSONObjectsKeysWithNonnulls];
     }
   }
 ]
-```
-
-#### Realm
-
-This is how you would use it with Realm.
-
-```objc
-RLMRealm *realm = [RLMRealm defaultRealm];
-[realm beginWriteTransaction];
-[self createOrUpdateInDefaultRealmWithObject:mincedJSON];
-[realm commitWriteTransaction];
 ```
 
 ## Installation
