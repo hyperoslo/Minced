@@ -15,15 +15,70 @@ This is especially useful as a workaround for avoiding crashes due to null value
 
 ```objc
 // Converts all the keys in the JSON to camelCase
-- (id)minced_JSONKeysToCamelCase;
-- (NSArray *)minced_JSONObjectsKeysToCamelCase;
-- (NSDictionary *)minced_JSONObjectKeysToCamelCase;
+- (id)minced_JSONKeys;
+- (NSArray *)minced_JSONObjectsKeys;
+- (NSDictionary *)minced_JSONObjectKeys;
 
 // Converts all the keys in the JSON to camelCase and replaces null values with an empty string
-- (id)minced_JSONKeysToCamelCaseWithValuesUnnullified;
-- (NSArray *)minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified;
-- (NSDictionary *)minced_JSONObjectKeysToCamelCaseWithValuesUnnullified;
+- (id)minced_JSONKeysWithNonnulls;
+- (NSArray *)minced_JSONObjectsKeysWithNonnulls;
+- (NSDictionary *)minced_JSONObjectKeysWithNonnulls;
 ```
+
+## Example
+
+#### JSON
+
+```json
+[
+  {
+    "created_at":null,
+    "updated_at":"2015-03-11",
+    "window":{
+      "title":null,
+      "name":"hyper_window"
+    }
+  },
+  {
+    "created_at":null,
+    "updated_at":"2015-03-12",
+    "panel":{
+      "title":null,
+      "name":"hyper_panel"
+    }
+  }
+]
+```
+
+#### Code
+
+```objc
+NSArray *mincedJSON = [JSON minced_JSONObjectsKeysWithNonnulls];
+```
+
+#### Minced JSON
+
+```json
+[
+  {
+    "createdAt":"",
+    "updatedAt":"2015-03-11",
+    "window":{
+      "title":"",
+      "name":"hyper_window"
+    }
+  },
+  {
+    "createdAt":"",
+    "updatedAt":"2015-03-12",
+    "panel":{
+      "title":"",
+      "name":"hyper_panel"
+    }
+  }
+]
+```
+
 
 ## Installation
 
