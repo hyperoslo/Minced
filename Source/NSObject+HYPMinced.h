@@ -3,7 +3,7 @@
 @interface NSObject (HYPMinced)
 
 - (id)minced_JSONKeys;
-- (id)minced_JSONKeysWithValuesUnnullified;
+- (id)minced_JSONKeysWithNonnulls;
 
 - (NSArray *)minced_JSONObjectsKeys;
 - (NSArray *)minced_JSONObjectsKeysWithNonnulls;
