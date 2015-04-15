@@ -15,14 +15,14 @@ This is especially useful as a workaround for avoiding crashes due to null value
 
 ```objc
 // Converts all the keys in the JSON to camelCase
-- (id)minced_JSONKeysToCamelCase;
-- (NSArray *)minced_JSONObjectsKeysToCamelCase;
-- (NSDictionary *)minced_JSONObjectKeysToCamelCase;
+- (id)minced_JSONKeys;
+- (NSArray *)minced_JSONObjectsKeys;
+- (NSDictionary *)minced_JSONObjectKeys;
 
 // Converts all the keys in the JSON to camelCase and replaces null values with an empty string
-- (id)minced_JSONKeysToCamelCaseWithValuesUnnullified;
-- (NSArray *)minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified;
-- (NSDictionary *)minced_JSONObjectKeysToCamelCaseWithValuesUnnullified;
+- (id)minced_JSONKeysWithNonnulls;
+- (NSArray *)minced_JSONObjectsKeysWithNonnulls;
+- (NSDictionary *)minced_JSONObjectKeysWithNonnulls;
 ```
 
 ## Example
@@ -53,7 +53,7 @@ This is especially useful as a workaround for avoiding crashes due to null value
 #### Code
 
 ```objc
-NSArray *mincedJSON = [JSON minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified];
+NSArray *mincedJSON = [JSON minced_JSONObjectsKeysWithNonnulls];
 ```
 
 #### Minced JSON

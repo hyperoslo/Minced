@@ -2,13 +2,13 @@
 
 @interface NSObject (HYPMinced)
 
-- (id)minced_JSONKeysToCamelCase;
-- (id)minced_JSONKeysToCamelCaseWithValuesUnnullified;
+- (id)minced_JSONKeys;
+- (id)minced_JSONKeysWithValuesUnnullified;
 
-- (NSArray *)minced_JSONObjectsKeysToCamelCase;
-- (NSArray *)minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified;
+- (NSArray *)minced_JSONObjectsKeys;
+- (NSArray *)minced_JSONObjectsKeysWithNonnulls;
 
-- (NSDictionary *)minced_JSONObjectKeysToCamelCase;
-- (NSDictionary *)minced_JSONObjectKeysToCamelCaseWithValuesUnnullified;
+- (NSDictionary *)minced_JSONObjectKeys;
+- (NSDictionary *)minced_JSONObjectKeysWithNonnulls;
 
 @end

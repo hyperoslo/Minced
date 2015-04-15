@@ -8,20 +8,20 @@
 
 @implementation Tests
 
-- (void)testToCamelCaseJSON
+- (void)testJSONKeys
 {
     id snakeCaseJSON = [self serializedJSON:@"snakeCaseJSON"];
     id camelCaseJSON = [self serializedJSON:@"camelCaseJSON"];
 
-    XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeysToCamelCase], camelCaseJSON);
+    XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeys], camelCaseJSON);
 }
 
-- (void)testToUnnullifiedCaseJSON
+- (void)testJSONObjectKeysWithNonnulls
 {
     id nullifiedSnakeCaseJSON = [self serializedJSON:@"nullifiedSnakeCaseJSON"];
     id unnullifiedCamelCaseJSON = [self serializedJSON:@"unnullifiedCamelCaseJSON"];
 
-    XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONKeysToCamelCaseWithValuesUnnullified], unnullifiedCamelCaseJSON);
+    XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONObjectKeysWithNonnulls], unnullifiedCamelCaseJSON);
 }
 
 - (id)serializedJSON:(NSString *)resource
