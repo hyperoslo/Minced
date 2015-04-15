@@ -21,7 +21,7 @@
     id nullifiedSnakeCaseJSON = [self serializedJSON:@"nullifiedSnakeCaseJSON"];
     id unnullifiedCamelCaseJSON = [self serializedJSON:@"unnullifiedCamelCaseJSON"];
 
-    XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONObjectKeysWithNonnulls], unnullifiedCamelCaseJSON);
+    XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONKeysWithNonnulls], unnullifiedCamelCaseJSON);
 }
 
 - (id)serializedJSON:(NSString *)resource
