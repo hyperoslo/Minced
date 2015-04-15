@@ -10,27 +10,29 @@
 
 - (void)testToCamelCaseJSON
 {
-    NSString *snakeCaseJSONFilePath = [[NSBundle bundleForClass:self.class] pathForResource:@"snakeCaseJSON"
-                                                                                     ofType:@"json"];
-
-    NSString *camelCaseJSONFilePath = [[NSBundle bundleForClass:self.class] pathForResource:@"camelCaseJSON"
-                                                                                     ofType:@"json"];
-
-    NSData *snakeCaseJSONData = [[NSData alloc] initWithContentsOfFile:snakeCaseJSONFilePath];
-    NSData *camelCaseJSONData = [[NSData alloc] initWithContentsOfFile:camelCaseJSONFilePath];
-
-    NSError *error1 = nil;
-    NSError *error2 = nil;
-
-    id snakeCaseJSON = [NSJSONSerialization JSONObjectWithData:snakeCaseJSONData
-                                                       options:kNilOptions
-                                                         error:&error1];
-
-    id camelCaseJSON = [NSJSONSerialization JSONObjectWithData:camelCaseJSONData
-                                                       options:kNilOptions
-                                                         error:&error2];
+    id snakeCaseJSON = [self serializedJSON:@"snakeCaseJSON"];
+    id camelCaseJSON = [self serializedJSON:@"camelCaseJSON"];
 
     XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeysToCamelCase], camelCaseJSON);
+}
+
+- (void)testToUnnullifiedCaseJSON
+{
+    id nullifiedSnakeCaseJSON = [self serializedJSON:@"nullifiedSnakeCaseJSON"];
+    id unnullifiedCamelCaseJSON = [self serializedJSON:@"unnullifiedCamelCaseJSON"];
+
+    XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONKeysToCamelCaseWithValuesUnnullified], unnullifiedCamelCaseJSON);
+}
+
+- (id)serializedJSON:(NSString *)resource
+{
+    NSString *JSONFilePath = [[NSBundle bundleForClass:self.class] pathForResource:resource ofType:@"json"];
+    NSData *JSONData = [[NSData alloc] initWithContentsOfFile:JSONFilePath];
+    NSError *error = nil;
+
+    return [NSJSONSerialization JSONObjectWithData:JSONData
+                                           options:kNilOptions
+                                             error:&error];
 }
 
 @end

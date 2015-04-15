@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Minced"
-  s.version          = "0.2"
-  s.summary          = "Convert JSON keys to camelCase"
+  s.version          = "0.3"
+  s.summary          = "Convert JSON keys to camelCase and optionally unnullify values"
   s.homepage         = "https://github.com/hyperoslo/Minced"
   s.license          = 'MIT'
   s.author           = { "Hyper AS" => "teknologi@hyper.no" }
