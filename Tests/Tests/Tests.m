@@ -16,7 +16,7 @@
     XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeys], camelCaseJSON);
 }
 
-- (void)testJSONObjectKeysWithNonnulls
+- (void)testJSONKeysWithNonnulls
 {
     id nullSnakeCaseJSON = [self serializedJSON:@"nullSnakeCaseJSON"];
     id nonnullCamelCaseJSON = [self serializedJSON:@"nonnullCamelCaseJSON"];
