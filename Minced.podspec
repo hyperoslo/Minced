@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Minced"
-  s.version          = "0.3"
+  s.version          = "0.4.0"
   s.summary          = "Convert JSON keys to camelCase and optionally unnullify values"
   s.homepage         = "https://github.com/hyperoslo/Minced"
   s.license          = 'MIT'
