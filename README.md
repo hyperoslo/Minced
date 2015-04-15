@@ -25,6 +25,61 @@ This is especially useful as a workaround for avoiding crashes due to null value
 - (NSDictionary *)minced_JSONObjectKeysToCamelCaseWithValuesUnnullified;
 ```
 
+## Example
+
+#### JSON
+
+```json
+[
+  {
+    "created_at":null,
+    "updated_at":"2015-03-11",
+    "window":{
+      "title":null,
+      "name":"hyper_window"
+    }
+  },
+  {
+    "created_at":null,
+    "updated_at":"2015-03-12",
+    "panel":{
+      "title":null,
+      "name":"hyper_panel"
+    }
+  }
+]
+```
+
+#### Code
+
+```objc
+NSArray *mincedJSON = [JSON minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified];
+```
+
+#### Minced JSON
+
+```json
+[
+  {
+    "createdAt":"",
+    "updatedAt":"2015-03-11",
+    "window":{
+      "title":"",
+      "name":"hyper_window"
+    }
+  },
+  {
+    "createdAt":"",
+    "updatedAt":"2015-03-12",
+    "panel":{
+      "title":"",
+      "name":"hyper_panel"
+    }
+  }
+]
+```
+
+
 ## Installation
 
 **Minced** is available through [CocoaPods](http://cocoapods.org). To install
