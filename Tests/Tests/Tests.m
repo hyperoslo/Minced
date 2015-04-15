@@ -16,12 +16,12 @@
     XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeys], camelCaseJSON);
 }
 
-- (void)testJSONObjectKeysWithNonnulls
+- (void)testJSONKeysWithNonnulls
 {
-    id nullifiedSnakeCaseJSON = [self serializedJSON:@"nullifiedSnakeCaseJSON"];
-    id unnullifiedCamelCaseJSON = [self serializedJSON:@"unnullifiedCamelCaseJSON"];
+    id nullSnakeCaseJSON = [self serializedJSON:@"nullSnakeCaseJSON"];
+    id nonnullCamelCaseJSON = [self serializedJSON:@"nonnullCamelCaseJSON"];
 
-    XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONObjectKeysWithNonnulls], unnullifiedCamelCaseJSON);
+    XCTAssertEqualObjects([nullSnakeCaseJSON minced_JSONKeysWithNonnulls], nonnullCamelCaseJSON);
 }
 
 - (id)serializedJSON:(NSString *)resource
