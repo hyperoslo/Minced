@@ -20,7 +20,7 @@
 {
     id nullifiedSnakeCaseJSON = [self serializedJSON:@"nullifiedSnakeCaseJSON"];
     id unnullifiedCamelCaseJSON = [self serializedJSON:@"unnullifiedCamelCaseJSON"];
-    
+
     XCTAssertEqualObjects([nullifiedSnakeCaseJSON minced_JSONKeysToCamelCaseWithValuesUnnullified], unnullifiedCamelCaseJSON);
 }
 
@@ -29,7 +29,7 @@
     NSString *JSONFilePath = [[NSBundle bundleForClass:self.class] pathForResource:resource ofType:@"json"];
     NSData *JSONData = [[NSData alloc] initWithContentsOfFile:JSONFilePath];
     NSError *error = nil;
-    
+
     return [NSJSONSerialization JSONObjectWithData:JSONData
                                            options:kNilOptions
                                              error:&error];

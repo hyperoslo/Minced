@@ -15,7 +15,7 @@
 - (NSArray *)minced_JSONObjectsKeysToCamelCase;
 - (NSDictionary *)minced_JSONObjectKeysToCamelCase;
 
-// Converts all the keys in the JSON to camelCase and replaces null values with ""
+// Converts all the keys in the JSON to camelCase and replaces null values with an empty string
 - (id)minced_JSONKeysToCamelCaseWithValuesUnnullified;
 - (NSArray *)minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified;
 - (NSDictionary *)minced_JSONObjectKeysToCamelCaseWithValuesUnnullified;

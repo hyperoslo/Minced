@@ -45,26 +45,26 @@
     } else if ([self isKindOfClass:NSDictionary.class]) {
         return [self minced_JSONObjectKeysToCamelCaseWithValuesUnnullified:unnullify];
     }
-    
+
     return self;
 }
 
 - (NSArray *)minced_JSONObjectsKeysToCamelCaseWithValuesUnnullified:(BOOL)unnullify
 {
     NSMutableArray *camelCaseJSON = [NSMutableArray new];
-    
+
     NSArray *JSONObjects = (NSArray *)self;
     for (NSDictionary *object in JSONObjects) {
         [camelCaseJSON addObject:[object minced_JSONObjectKeysToCamelCaseWithValuesUnnullified:unnullify]];
     }
-    
+
     return [camelCaseJSON copy];
 }
 
 - (NSDictionary *)minced_JSONObjectKeysToCamelCaseWithValuesUnnullified:(BOOL)unnullify
 {
     NSMutableDictionary *camelCaseJSONObject = [NSMutableDictionary new];
-    
+
     NSDictionary *JSONObject = (NSDictionary *)self;
     [JSONObject enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         if ([obj isKindOfClass:NSArray.class]) {
@@ -77,7 +77,7 @@
             camelCaseJSONObject[[key hyp_localString]] = obj;
         }
     }];
-    
+
     return [camelCaseJSONObject copy];
 }
 
