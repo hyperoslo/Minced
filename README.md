@@ -9,7 +9,7 @@
 
 Minced converts JSON keys to camelCase an adds support for replacement of JSON null values with empty strings.
 
-This is especially useful as a workaround for avoiding crashes due to null values when using Realm. More info: [Issue #628](../../../../realm/realm-cocoa/issues/628)
+This is especially useful as a workaround for avoiding crashes due to null values when using Realm. More info: [Issue #628](https://github.com/realm/realm-cocoa/issues/628)
 
 ## Usage
 
