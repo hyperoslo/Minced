@@ -11,4 +11,6 @@
 - (NSDictionary *)minced_JSONObjectKeys;
 - (NSDictionary *)minced_JSONObjectKeysWithNonnulls;
 
+- (id)minced_valuesForKey:(NSString *)key;
+
 @end
