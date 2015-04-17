@@ -27,4 +27,8 @@
     XCTAssertEqualObjects([nullSnakeCaseJSON minced_JSONKeysWithNonnulls], nonnullCamelCaseJSON);
 }
 
+- (void)testMincedValuesForKey {
+    
+}
+
 @end

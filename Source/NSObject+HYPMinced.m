@@ -30,6 +30,10 @@
     return [self minced_JSONObjectKeysWithNonnulls:YES];
 }
 
+- (id)minced_valuesForKey:(NSString *)key {
+    return nil;
+}
+
 #pragma mark - Private
 
 - (id)minced_JSONKeysWithNonnullValues:(BOOL)unnullify {
