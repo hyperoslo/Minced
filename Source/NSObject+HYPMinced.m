@@ -6,51 +6,43 @@
 
 #pragma mark - Public
 
-- (id)minced_JSONKeys
-{
+- (id)minced_JSONKeys {
     return [self minced_JSONKeysWithNonnullValues:NO];
 }
 
-- (id)minced_JSONKeysWithNonnulls
-{
+- (id)minced_JSONKeysWithNonnulls {
     return [self minced_JSONKeysWithNonnullValues:YES];
 }
 
-- (NSArray *)minced_JSONObjectsKeys
-{
+- (NSArray *)minced_JSONObjectsKeys {
     return [self minced_JSONObjectsKeysWithNonnulls:NO];
 }
 
-- (NSArray *)minced_JSONObjectsKeysWithNonnulls
-{
+- (NSArray *)minced_JSONObjectsKeysWithNonnulls {
     return [self minced_JSONObjectsKeysWithNonnulls:YES];
 }
 
-- (NSDictionary *)minced_JSONObjectKeys
-{
+- (NSDictionary *)minced_JSONObjectKeys {
     return [self minced_JSONObjectKeysWithNonnulls:NO];
 }
 
-- (NSDictionary *)minced_JSONObjectKeysWithNonnulls
-{
+- (NSDictionary *)minced_JSONObjectKeysWithNonnulls {
     return [self minced_JSONObjectKeysWithNonnulls:YES];
 }
 
 #pragma mark - Private
 
-- (id)minced_JSONKeysWithNonnullValues:(BOOL)unnullify
-{
-    if ([self isKindOfClass:NSArray.class]) {
+- (id)minced_JSONKeysWithNonnullValues:(BOOL)unnullify {
+    if ([self isKindOfClass:[NSArray class]]) {
         return [self minced_JSONObjectsKeysWithNonnulls:unnullify];
-    } else if ([self isKindOfClass:NSDictionary.class]) {
+    } else if ([self isKindOfClass:[NSDictionary class]]) {
         return [self minced_JSONObjectKeysWithNonnulls:unnullify];
     }
 
     return self;
 }
 
-- (NSArray *)minced_JSONObjectsKeysWithNonnulls:(BOOL)unnullify
-{
+- (NSArray *)minced_JSONObjectsKeysWithNonnulls:(BOOL)unnullify {
     NSMutableArray *camelCaseJSON = [NSMutableArray new];
 
     NSArray *JSONObjects = (NSArray *)self;
@@ -61,8 +53,7 @@
     return [camelCaseJSON copy];
 }
 
-- (NSDictionary *)minced_JSONObjectKeysWithNonnulls:(BOOL)unnullify
-{
+- (NSDictionary *)minced_JSONObjectKeysWithNonnulls:(BOOL)unnullify {
     NSMutableDictionary *camelCaseJSONObject = [NSMutableDictionary new];
 
     NSDictionary *JSONObject = (NSDictionary *)self;

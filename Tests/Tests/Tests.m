@@ -8,24 +8,21 @@
 
 @implementation Tests
 
-- (void)testJSONKeys
-{
+- (void)testJSONKeys {
     id snakeCaseJSON = [self serializedJSON:@"snakeCaseJSON"];
     id camelCaseJSON = [self serializedJSON:@"camelCaseJSON"];
 
     XCTAssertEqualObjects([snakeCaseJSON minced_JSONKeys], camelCaseJSON);
 }
 
-- (void)testJSONKeysWithNonnulls
-{
+- (void)testJSONKeysWithNonnulls {
     id nullSnakeCaseJSON = [self serializedJSON:@"nullSnakeCaseJSON"];
     id nonnullCamelCaseJSON = [self serializedJSON:@"nonnullCamelCaseJSON"];
 
     XCTAssertEqualObjects([nullSnakeCaseJSON minced_JSONKeysWithNonnulls], nonnullCamelCaseJSON);
 }
 
-- (id)serializedJSON:(NSString *)resource
-{
+- (id)serializedJSON:(NSString *)resource {
     NSString *JSONFilePath = [[NSBundle bundleForClass:self.class] pathForResource:resource ofType:@"json"];
     NSData *JSONData = [[NSData alloc] initWithContentsOfFile:JSONFilePath];
     NSError *error = nil;
