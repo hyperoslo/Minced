@@ -3,3 +3,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
 pod 'NSString-HYPNetworking', '~> 0.2'
+pod 'JSON'

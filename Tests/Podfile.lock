@@ -1,10 +1,13 @@
 PODS:
+  - JSON (2.0.0)
   - NSString-HYPNetworking (0.2)
 
 DEPENDENCIES:
+  - JSON
   - NSString-HYPNetworking (~> 0.2)
 
 SPEC CHECKSUMS:
+  JSON: ae78fbdc377c54a09881d28a90464facc1fbe047
   NSString-HYPNetworking: db2792b0333bc385fd999acaf59737a2b56bcedc
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.36.4
